@@ -1,0 +1,2 @@
+class AaparmentController < ApplicationController
+end
