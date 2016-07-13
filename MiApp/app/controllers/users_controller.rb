@@ -9,29 +9,36 @@ class UsersController < ApplicationController
 	end
 
 	def edit
-    @user=User.find(params[:id])
+    @user= User.find(params[:id])
 	end
 
 	def create
-    @user=User.find(params[:id])
-    @user.save
+	  @user=User.new(user_params)
+	  @user.save
+	  redirect_to users_path
+	end
+
+
+	#def create
+    #@user= User.find(params[:id])
+    #@user.save
+    #redirect_to users_path
+	#end
+
+	def destroy
+    @user= User.find(params[:id])
+    @user.destroy
     redirect_to users_path
 	end
 
-	def destroy
-    @user=User.find(params[:id])
-    @user.destroy
-    redirect_to_users_path
-	end
-
 	def update
-    @user=User.find(params[:id])
+    @user= User.find(params[:id])
     @user.update(user_params)
-    redirect_to_users_path
+    redirect_to users_path
 	end
 
 	def user_params
-    params.require(:user).permit(:name,:tower,:apartment)
+    params.require(:user).permit(:name,:tower,:aparment)
 	end
 
 
