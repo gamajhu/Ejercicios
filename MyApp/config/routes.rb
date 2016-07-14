@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  resources :towers
-  resources :users
-  get 'welcome/index'
+
+  #get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -17,7 +16,13 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :users
 
+  resources :towers do
+  resources :apartments
+   
+
+ 
   # Example resource route with options:
   #   resources :products do
   #     member do
