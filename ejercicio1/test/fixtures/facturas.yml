@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombres: MyString
+  apellidos: MyString
+  cedula: MyString
+  producto: MyString
+  precio: 1
+  iva: 1
+  descuento: 1
+
+two:
+  nombres: MyString
+  apellidos: MyString
+  cedula: MyString
+  producto: MyString
+  precio: 1
+  iva: 1
+  descuento: 1
