@@ -1,0 +1,1 @@
+json.partial! "flights_passengers/flights_passenger", flights_passenger: @flights_passenger
