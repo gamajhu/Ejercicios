@@ -61,6 +61,11 @@ class MatchesController < ApplicationController
     end
   end
 
+  def create_matches
+    Match.create_matches
+    redirect_to matches_path, notice: 'Match was successfully destroyed.'
+  end 
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_match
