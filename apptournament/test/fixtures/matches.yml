@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  match_id: 1
+  result: 1
+  date: 2016-07-27 09:55:07
+  winer_id: 1
+
+two:
+  match_id: 1
+  result: 1
+  date: 2016-07-27 09:55:07
+  winer_id: 1
